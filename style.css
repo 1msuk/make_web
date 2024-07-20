@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 폼 스타일 */
+#postForm, #loginForm, #signupForm {
+    background-color: #1ce40a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* 게시물 목록 스타일 */
+#posts {
+    margin-top: 20px;
+}
+
+/* 개별 게시물 스타일 */
+.post {
+    background-color: #0505ef;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* 숨김 클래스 */
+.hidden {
+    display: none;
+}

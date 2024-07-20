@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day in my life</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 인증 섹션 -->
+    <div id="authSection">
+        <!-- 로그인 폼 -->
+        <div id="loginForm">
+            <h2>로그인</h2>
+            <input type="text" id="loginUsername" placeholder="사용자명">
+            <input type="password" id="loginPassword" placeholder="비밀번호">
+            <button onclick="login()">로그인</button>
+        </div>
+        <!-- 회원가입 폼 -->
+        <div id="signupForm">
+            <h2>회원가입</h2>
+            <input type="text" id="signupUsername" placeholder="사용자명">
+            <input type="password" id="signupPassword" placeholder="비밀번호">
+            <button onclick="signup()">회원가입</button>
+        </div>
+    </div>
+
+    <!-- 게시물 섹션 -->
+    <div id="postSection" class="hidden">
+        <h2>게시물 작성</h2>
+        <div id="postForm">
+            <textarea id="postContent" rows="4" cols="50" placeholder="여기에 게시물을 작성하세요"></textarea>
+            <button onclick="savePost()">게시물 저장</button>
+        </div>
+        <div id="posts"></div>
+        <button onclick="logout()">로그아웃</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
